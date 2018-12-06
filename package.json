@@ -1,11 +1,12 @@
 {
   "name": "ember-cli-typescript-declaration-generator",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "private": true,
+  "description": "Nothing to see here.",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "dfreeman/ember-cli-typescript-declaration-generator",
   "license": "MIT",
   "author": "",
   "directories": {
@@ -21,10 +22,17 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.16.0"
+    "fs-extra": "^7.0.1",
+    "fs-tree-diff": "^1.0.2",
+    "walk-sync": "^0.3.3"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.3",
+    "@types/broccoli-plugin": "^1.3.0",
+    "@types/console-ui": "^2.2.0",
+    "@types/core-object": "^3.0.0",
+    "@types/fs-extra": "^5.0.4",
+    "@types/rsvp": "^4.0.2",
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.1.0",
     "ember-cli": "~3.5.0",
@@ -48,7 +56,10 @@
     "eslint-plugin-ember": "^5.2.0",
     "eslint-plugin-node": "^7.0.1",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^0.8.0"
+    "qunit-dom": "^0.8.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6",
+    "typescript-eslint-parser": "^21.0.1"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
