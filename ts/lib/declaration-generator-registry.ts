@@ -71,5 +71,9 @@ interface DeclarationGenerator {
 }
 
 function isGeneratorAddon(addon: Addon | Project): addon is DeclarationGeneratorAddon {
-  return !!addon.pkg.keywords && addon.pkg.keywords.includes('ember-cli-typescript-declaration-generator');
+  return (
+    typeof addon.name === 'string' &&
+    !!addon.pkg.keywords &&
+    addon.pkg.keywords.includes('ember-cli-typescript-declaration-generator')
+  );
 }
